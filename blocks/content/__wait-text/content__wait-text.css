@@ -1,0 +1,9 @@
+.content__wait-text {
+    margin: 0;
+    visibility: hidden;
+    margin-top: 15px;
+    color: #ffa347;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
