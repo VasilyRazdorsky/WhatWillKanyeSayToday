@@ -22,8 +22,6 @@ function renderLoading(isLoading) {
 }
 
 function getQuote() {
-  renderLoading(true);
-  setPicture();
   fetch("https://api.kanye.rest")
     .then((res) => {
       return res.json();
@@ -39,8 +37,8 @@ function getQuote() {
     });
 }
 
-function setPicture() {
+contentButton.addEventListener("click", () => {
+  renderLoading(true);
   contentImage.src = getRandomImageLink();
-}
-
-contentButton.addEventListener("click", getQuote);
+  getQuote();
+});
