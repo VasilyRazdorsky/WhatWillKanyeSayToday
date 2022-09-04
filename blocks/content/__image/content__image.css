@@ -1,0 +1,8 @@
+.content__image {
+    display: block;
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 50px;
+}

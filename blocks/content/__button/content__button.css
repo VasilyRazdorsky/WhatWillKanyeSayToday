@@ -1,0 +1,21 @@
+.content__button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 55px;
+    text-decoration: none;
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6347;
+    color: #bfcb3a;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 1;
+    transition: background-color ease-in .3s;
+}
+
+.content__button:hover {
+    cursor: pointer;
+    background-color: #ff5330;
+}
