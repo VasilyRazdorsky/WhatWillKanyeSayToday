@@ -22,6 +22,7 @@ function renderLoading(isLoading) {
 }
 
 function getQuote() {
+  renderLoading(true);
   fetch("https://api.kanye.rest")
     .then((res) => {
       return res.json();
@@ -33,12 +34,9 @@ function getQuote() {
       contentText.textContent = "No words today...";
     })
     .finally(() => {
+      contentImage.src = getRandomImageLink();
       renderLoading(false);
     });
 }
 
-contentButton.addEventListener("click", () => {
-  renderLoading(true);
-  contentImage.src = getRandomImageLink();
-  getQuote();
-});
+contentButton.addEventListener("click", getQuote);
